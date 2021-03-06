@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<title>Phoebe Winnie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>Phoebe</b></h1>
+  <p><b></b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.15752-9/31944572_199490567519989_3978164542537465856_n.jpg?_nc_cat=0&oh=1949dc4c679ab8f89315507c42a73094&oe=5B5C4719" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1501769214405-5e5ee5125a02?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c87488878484ebc97d63b884ef804e1&auto=format&fit=crop&w=698&q=80" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.15752-9/31949891_199490467519999_6530468937157574656_n.jpg?_nc_cat=0&oh=e3ccdb0018937a7052c981b494da9cee&oe=5B8AAD04" style="width:100%">
+    <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/16194979_379970889031186_8788113982690347284_n.jpg?_nc_cat=0&oh=cd4f683d8b75857179ec82b0d4b53f38&oe=5B5EACA5" style="width:100%">
+    <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.15752-9/31947983_199490594186653_8770030915842736128_n.jpg?_nc_cat=0&oh=e3fccaaa38499981a24f5fac0ff2c34e&oe=5B92722D" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="https://www.w3schools.com/w3images/london.jpg" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.15752-9/31947216_199490150853364_1586676114460246016_n.jpg?_nc_cat=0&oh=2ac4096c9432739e990c80d7bb31187b&oe=5B96F661" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/18765773_436432960051645_4429966001961794924_n.jpg?_nc_cat=0&oh=b40b92c490110e7ee5f43ea35171d68a&oe=5B96332B" style="width:100%">
+    <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/17202739_399423977085877_8089633938728440515_n.jpg?_nc_cat=0&oh=818bd82e6fe88dee4ba0cf2a7a53eb00&oe=5B8C74CF" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1501769214405-5e5ee5125a02?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c87488878484ebc97d63b884ef804e1&auto=format&fit=crop&w=698&q=80" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+    } else { 
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+}
+
+// Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
